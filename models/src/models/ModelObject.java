@@ -6,6 +6,7 @@ public class ModelObject{
 	Models model;
 	Point3 point;
 	Matrix turn;
+	Matrix move;
 
 	ModelObject(){
 		point = new Point3(0,0,0);
