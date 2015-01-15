@@ -24,9 +24,7 @@ public class Matrix {
 
 	public static void main(String args[]){
 		Matrix a = new Matrix(new int[][] {{3,3},{2,2},{1,1}});
-		Matrix b = new Matrix(new int[][] {{3,3},{2,2}});
 		printMat(a);
-		Matrix ans = mul(a,b);
 		System.out.print(mul(new Matrix(new int[][] {{3,3,3},{2,2,2}}),new Point3(1,2,3)));
 	}
 
