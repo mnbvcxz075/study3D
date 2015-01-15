@@ -7,8 +7,13 @@ public class Matrix {
 	Exception e;
 	Matrix(int row,int col){
 		mat = new int[col][row];
-		this.row=row;
+		for(int i = 0;i<col;i++){
+			for(int j=0;j<row;j++){
+				mat[i][j]=0;
+			}
+		}
 		this.col=col;
+		this.row=row;
 	}
 	Matrix(int[][] a){
 		for(int i=0;i<a.length;i++){

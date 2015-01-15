@@ -8,10 +8,12 @@ public class ModelObject{
 	Matrix turn;
 	Matrix move;
 
-	ModelObject(){
-		point = new Point3(0,0,0);
-		model = new Models();
-	}
+//	ModelObject(){
+//		point = new Point3(0,0,0);
+//		model = new Models();
+//		turn = new Matrix(4,3);
+//		move = new Matrix(4,3);
+//	}
 	ModelObject(int x,int y,int z){
 		this(new Point3(x,y,z));
 	}
@@ -27,6 +29,8 @@ public class ModelObject{
 	ModelObject(Models model,Point3 p){
 		this.model = new Models(model);
 		this.point=p;
+		turn = new Matrix(new int[][] {{1,0,0,0},{0,1,0,0},{0,0,1,0}});
+		move = new Matrix(new int[][] {{1,0,0,0},{0,1,0,0},{0,0,1,0}});
 	}
 
 }
